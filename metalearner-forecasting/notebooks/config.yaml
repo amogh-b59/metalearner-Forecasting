@@ -1,0 +1,6 @@
+# version control
+# using hydra for config files
+# all paths are listed here
+
+file_path: "D:\\Crider_Forecasting\\notebooks\\demo.xlsx"
+

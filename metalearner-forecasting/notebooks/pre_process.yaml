@@ -1,0 +1,63 @@
+#data_preprocessing params
+
+file_path: "D:\\Crider_Forecasting\\notebooks\\demo.xlsx"
+
+target_keywords:
+  - 'sales'
+  - '$'
+  - 'dollars'
+  - 'units'
+
+supported_file_types: 
+  - csv
+  - excel
+  - xlsx
+
+date_formats: 
+  - '%Y-%m-%d'
+  - '%Y-%m-%d %H:%M:%S' 
+  - '%Y-%m-%d %H:%M:%S.%f' 
+  - '%Y%m%d' 
+  - '%m/%d/%Y' 
+  - '%m/%d/%y' 
+  - '%d/%m/%Y' 
+  - '%d/%m/%y'
+  - '%m/%d/%y %I:%M %p'
+  - 'w/e %m/%d/%y'
+
+date_column_keywords: 
+  - Date 
+  - Periods 
+  - Timestamps 
+  - Time 
+  - Datetime 
+  - DateTime
+  - date
+  - time
+  - periods
+  - datetime
+
+numerical_dtypes:
+  - int64
+  - float64
+
+categorical_dtypes:
+  - object
+
+target_column_keywords:
+  - Sales
+  - Sales $
+  - Total Sales
+  - $
+  - Dollars
+  - Dollars $
+  - Sales-$
+  - Sales$
+
+missing_values:
+  - NA
+  - Unknown
+  - '?'
+  - 'NULL'
+  - '-1'
+  - ''

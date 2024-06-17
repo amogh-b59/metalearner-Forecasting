@@ -1,0 +1,14 @@
+# version control
+# using hydra for config files
+# all paths are listed here
+
+file_path: "D:\Amogh\Crider_Forecasting\crider_forecasting\data\raw\demo.xlsx"
+processed_data_path: r"D:\Amogh\Crider_Forecasting\crider_forecasting\data\processed\preprocessed_data.npy"
+model_location: r"D:\Amogh\Crider_Forecasting\crider_forecasting\src\models"
+preprocess_location: r"D:\Amogh\Crider_Forecasting\crider_forecasting\config\pre_process.yaml"
+config_location: r"D:\Amogh\Crider_Forecasting\crider_forecasting\config\config.yaml"
+
+import_settings:
+  - src_path: "os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))"
+
+log_dir: 

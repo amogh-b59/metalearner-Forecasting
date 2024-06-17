@@ -1,0 +1,29 @@
+import setuptools
+
+setuptools.setup(
+    name="crider_forecasting",
+    version="0.1",
+    packages=setuptools.find_namespace_packages(),
+    include_package_data=True,
+    entry_points={
+        'console_scripts'=[
+            "my_command=crider_forecasting.src.data_preprocess_pipeline:read_data",
+        ],
+    },
+    install_requires=[
+        'Click',
+        'pandas',
+        'sklearn',
+        'tensorflow',
+        'seaborn',
+        'dvc',
+        'matplotlib',
+        'pylab-sdk',
+        'scipy',
+        'numpy',
+        'statsmodels>=0.12.1',
+        'tqdm',
+        'tsfresh',
+        'ipympl'
+    ],
+    )

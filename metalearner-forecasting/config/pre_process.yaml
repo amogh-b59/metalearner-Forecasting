@@ -1,0 +1,81 @@
+#data_preprocessing params
+
+file_path: "D:/Amogh/Crider_Forecasting/crider_forecasting/data/raw/demo.xlsx"
+save_path: "D:/Amogh/Crider_Forecasting/crider_forecasting/results/correlation_matrix.png"
+processed_data_path: "D:/Amogh/Crider_Forecasting/crider_forecasting/data/processed"
+
+target_keywords:
+  - sales
+  - $
+  - dollars
+  - units
+
+supported_file_types: 
+  - 'csv'
+  - 'excel'
+  - 'xlsx'
+
+date_formats: 
+  - '%Y-%m-%d'
+  - '%Y-%m-%d %H:%M:%S' 
+  - '%Y-%m-%d %H:%M:%S.%f' 
+  - '%Y%m%d' 
+  - '%m/%d/%Y' 
+  - '%m/%d/%y' 
+  - '%d/%m/%Y' 
+  - '%d/%m/%y'
+  - '%d-%a-%y'  
+  - '%d/%a/%y'
+  - '%d.%a.%y'
+  - '%Y.%d.%a'
+  - '%a/%d/%y'
+  - '%y/%d/%a'
+  - '%d/%A/%y'  
+  - '%d-%A-%y'
+  - '%d.%A.%y'
+  - '%d/%b/%y'  
+  - '%d/%B/%y'  
+  - '%d/%m/%y'  
+  - '%Y/%d/%m'  
+  - '%Y-%d-%m %I:%M:%S'  
+  - '%Y/%d/%m %I:%M:%S %p'
+
+date_column_keywords: 
+  - Date 
+  - Periods 
+  - Timestamps 
+  - Time 
+  - Datetime 
+  - DateTime
+  - date
+  - time
+  - periods
+  - datetime
+  - Week
+  - WEEK
+  - week
+
+numerical_dtypes:
+  - int64
+  - float64
+
+categorical_dtypes:
+  - object
+
+target_column_keywords:
+  - Sales
+  - Sales $
+  - Total Sales
+  - $
+  - Dollars
+  - Dollars $
+  - Sales-$
+  - Sales$
+
+missing_values:
+  - NA
+  - Unknown
+  - '?'
+  - 'NULL'
+  - '-1'
+  - ''
